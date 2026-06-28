@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🌍 TripNest
 
-First, run the development server:
+A modern full-stack travel planner that helps users organize trips, build personalized itineraries, and visualize destinations with interactive Google Maps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📸 Preview
+
+![1782663365111](image/README/1782663365111.png)
+
+---
+
+## ✨ Features
+
+* 🔐 Secure GitHub Authentication
+* 🧳 Create and manage multiple trips
+* 📝 Add detailed trip descriptions
+* 🖼️ Upload custom trip cover images
+* 📍 Search and add destinations with automatic geocoding
+* 🗺️ Interactive Google Maps integration
+* 📌 View trip destinations with map markers
+* 🔄 Drag-and-drop itinerary reordering
+* 📱 Fully responsive design
+* ⚡ Fast server actions with Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+
+### Backend
+
+* Next.js Server Actions
+* Prisma ORM
+* Neon PostgreSQL
+* NextAuth.js
+
+### APIs & Services
+
+* Google Maps JavaScript API
+* Google Geocoding API
+* UploadThing
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```
+git clone https://github.com/Lakshya-coder-1418/TripNest.git
+cd tripnest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Create `.env.local`
 
-## Learn More
+```
+AUTH_GITHUB_ID=your_github_client_id
+AUTH_GITHUB_SECRET=your_github_client_secret
+AUTH_SECRET=your_auth_secret
 
-To learn more about Next.js, take a look at the following resources:
+UPLOADTHING_TOKEN=your_uploadthing_token
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Start the development server
 
-## Deploy on Vercel
+```
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [**http://localhost:3000**](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📂 Project Structure
+
+```
+app/
+components/
+lib/
+prisma/
+public/
+```
+
+---
+
+## 🌟 Future Improvements
+
+* 🤖 AI-powered itinerary recommendations
+* 💰 Budget planner
+* 🌦️ Weather forecasts
+* 👥 Collaborative trip planning
+* 📤 Trip sharing
+* 📄 Export itinerary as PDF
+* 📱 Offline support
+
+---
